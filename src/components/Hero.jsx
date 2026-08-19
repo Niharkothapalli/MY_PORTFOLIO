@@ -86,7 +86,7 @@ export default function Hero() {
               className="text-dark text-sm leading-relaxed mb-3 max-w-md"
               style={{ fontFamily: "'Share Tech Mono', monospace" }}
             >
-            Software Engineer and Full Stack Developer specializing in Java, Modern Web Development, Data Engineering, and AI-powered applications.            </motion.p>
+            Full Stack Developer and Data Engineer specializing in modern web development, data engineering, Java, and AI-powered applications.</motion.p>
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -94,7 +94,7 @@ export default function Hero() {
               className="text-muted text-sm leading-relaxed mb-8 max-w-md"
               style={{ fontFamily: "'Share Tech Mono', monospace" }}
             >
-              Currently building scalable web platforms and intelligent software solutions.
+              Currently building scalable software, reliable data pipelines, and AI-powered applications.
             </motion.p>
 
             {/* CTAs */}

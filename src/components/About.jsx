@@ -5,10 +5,10 @@ import { personalInfo, education } from '../data/portfolio'
 import { fadeUp, stagger, scaleIn } from '../utils/animations'
 
 const stats = [
-  { label: 'Projects Built', value: 6, suffix: '+' },
+  { label: 'Certified data engineer Associate', value: 'Databricks', suffix: '' },
   { label: 'ECE CGPA', value: 8.75, suffix: '' },
+  { label: 'Projects Built', value: 4, suffix: '+' },
   { label: 'CS Minor CGPA', value: 9.5, suffix: '' },
-  { label: 'Internships', value: 3, suffix: '+' },
 ]
 
 function Counter({ target, suffix, run }) {
@@ -16,9 +16,8 @@ function Counter({ target, suffix, run }) {
   const frame = useRef(null)
 
   useEffect(() => {
-    if (!run) return
+    if (!run || typeof target !== 'number') return
     const isFloat = target % 1 !== 0
-    const duration = 1200
     const steps = 60
     const increment = target / steps
     let current = 0
@@ -31,6 +30,7 @@ function Counter({ target, suffix, run }) {
     return () => cancelAnimationFrame(frame.current)
   }, [run, target])
 
+  if (typeof target === 'string') return <span>{target}</span>
   return <span>{count}{suffix}</span>
 }
 
@@ -65,7 +65,7 @@ export default function About() {
               <div>
                 <p className="font-mono text-xs text-muted uppercase tracking-widest mb-3">CORE STACK //</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Java', 'JavaScript', 'Node.js', 'SQL', 'AI Systems', 'RAG'].map((t) => (
+                  {['Java', 'JavaScript', 'Node.js', 'SQL', 'PySpark', 'ELT', 'AI Systems', 'RAG'].map((t) => (
                     <span key={t} className="tag">{t}</span>
                   ))}
                 </div>
@@ -87,6 +87,12 @@ export default function About() {
                     </p>
                   </div>
                 ))}
+              </div>
+
+              {/* Location */}
+              <div>
+                <p className="font-mono text-xs text-muted uppercase tracking-widest mb-2">LOCATION //</p>
+                <p className="font-mono text-xs text-dark uppercase tracking-wide">Annavaram, Andhra Pradesh</p>
               </div>
             </motion.div>
 
@@ -127,7 +133,10 @@ export default function About() {
                     variants={scaleIn}
                     className="cyber-box p-5 text-center angle-br"
                   >
-                    <p className="text-3xl font-bold text-black cb-title tracking-tight">
+                    <p className="text-3xl font-bold text-black cb-title tracking-tight flex items-center justify-center gap-2">
+                      {value === 'Databricks' && (
+                        <img src="/certificates/databricks.png.png" alt="Databricks" className="w-7 h-7 object-contain inline-block" />
+                      )}
                       <Counter target={value} suffix={suffix} run={inView} />
                     </p>
                     <p className="font-mono text-xs text-muted uppercase tracking-wider mt-1 cb-muted">{label}</p>

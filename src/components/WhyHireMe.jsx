@@ -26,7 +26,7 @@ export default function WhyHireMe() {
               >
                 <div className="flex items-center gap-2 px-5 py-3 border-b-2 border-black bg-black">
                   <span className="w-2 h-2 bg-green-500 animate-pulse" />
-                  <span className="font-mono text-xs text-white uppercase tracking-widest">What Makes Me a Strong Candidate</span>
+                  <span className="font-mono text-xs text-white uppercase tracking-widest">WHAT I BRING TO THE TABLE</span>
                 </div>
                 <div className="p-6 grid sm:grid-cols-2 gap-3">
                   {whyHireMe.map(({ text, icon }) => (
@@ -75,7 +75,7 @@ export default function WhyHireMe() {
                   OPEN TO OPPORTUNITIES
                 </p>
                 <div className="grid grid-cols-2 gap-2">
-                  {['Software Engineering', 'Full-Stack Development', 'Backend Development', 'AI Engineering', 'Web Development', 'Data Engineering'].map((role) => (
+                  {['Software Engineering', 'Data Engineering', 'Full-Stack Development', 'AI Engineering'].map((role) => (
                     <div key={role} className="flex items-center gap-2 text-sm text-zinc-300">
                       <span className="text-green-400">✓</span>
                       <span className="font-bold uppercase tracking-wide text-xs">{role}</span>

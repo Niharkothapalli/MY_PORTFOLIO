@@ -8,6 +8,8 @@ const statusColors = {
   'Node.js': 'text-green-600', 'Firebase': 'text-orange-500',
   'Gemini API': 'text-cyan-600', 'FAISS': 'text-cyan-600',
   'RAG': 'text-purple-600', 'Express.js': 'text-green-600',
+  'Databricks': 'text-red-500', 'PySpark': 'text-orange-500',
+  'Delta Lake': 'text-blue-500', 'SQL': 'text-yellow-600',
 }
 
 function ProjectCard({ project }) {

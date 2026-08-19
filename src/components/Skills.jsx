@@ -5,12 +5,12 @@ import { fadeUp, stagger, scaleIn } from '../utils/animations'
 
 const categoryIcons = {
   'Languages': 'ph-code',
+  'Data Engineering': 'ph-database',
   'Frontend': 'ph-layout',
-  'Backend & Databases': 'ph-database',
+  'Backend & Databases': 'ph-server',
   'AI & Generative AI': 'ph-robot',
   'Tools & Platforms': 'ph-wrench',
   'CS Fundamentals': 'ph-graduation-cap',
-  'Currently Learning': 'ph-lightning',
 }
 
 export default function Skills() {

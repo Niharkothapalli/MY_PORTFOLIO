@@ -51,8 +51,7 @@ export default function Contact() {
             <h2 className="section-heading">Get In Touch</h2>
             <div className="bp-divider" />
             <p className="text-muted text-base max-w-xl mt-2">
-              Seeking Software Engineering, Full Stack Development, and AI Engineering opportunities where I can contribute, learn, and grow.
-              Feel free to reach out regarding internships, full-time roles, freelance work, or collaborations.
+              Open to Software Engineering, Full-Stack Development, Data Engineering, and AI Engineering opportunities where I can contribute to real-world projects, build scalable solutions, and continue growing as an engineer.
             </p>
           </motion.div>
 
@@ -89,7 +88,7 @@ export default function Contact() {
                 <p className="status-online text-green-400 font-mono text-xs">ACTIVELY RECRUITING</p>
                 <p className="text-white font-bold uppercase tracking-wide mt-2">Available for Opportunities</p>
                 <div className="grid grid-cols-2 gap-1 mt-2">
-                  {['Software Engineering', 'Full Stack Dev', 'Data Engineering', 'AI Engineering'].map((r) => (
+                  {['Software Engineering', 'Full-Stack Development', 'Data Engineering', 'AI Engineering'].map((r) => (
                     <p key={r} className="font-mono text-xs text-zinc-400 flex items-center gap-1"><span className="text-green-400">✓</span>{r}</p>
                   ))}
                 </div>
