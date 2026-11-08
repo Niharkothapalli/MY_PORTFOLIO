@@ -96,7 +96,7 @@ export const projects = [
     tech: ['React.js', 'FastAPI', 'Python', 'Cohere', 'FAISS', 'RAG'],
     features: ['ATS RESUME ANALYSIS', 'CAREER RECOMMENDATIONS', 'MOCK INTERVIEWS', 'AI CAREER ASSISTANT', 'TECHNICAL Q&A GENERATION'],
     github: 'https://github.com/Niharkothapalli/CareerLens-AI',
-    demo: null,
+    demo: 'https://careerlens-ai-nk.vercel.app/',
     icon: '🤖',
   },
   {
